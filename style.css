@@ -81,22 +81,57 @@ body {
     background-size: contain;
     z-index: 1;
 }
-@media (max-width: 768px) {
-    /* ... other existing styles ... */
-    
-    /* FIX 2: Correct Mobile Banner Positioning */
-    .bgbanner {
-        width: 90%; /* Make it wider on mobile */
-        left: 5%; /* Center it better (90% width + 5% left margin leaves 5% right margin) */
+/* CHANGE 900px to 1200px */
+@media (max-width: 1200px) { 
+    /* Adjust Hero Section */
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-bottom: 50px;
+        min-height: auto;
+        padding-top: 0; 
         
-        /* FIX 3: Clean up height properties on mobile */
-        height: 0; 
-        padding-bottom: 30%; /* INCREASE HEIGHT on mobile to prevent clipping (Adjust this value!) */
+        /* FIX 1: Add Stacking Context */
+        position: relative; 
+    }
+
+    /* FIX 2: Banner must span full width when stacked */
+    .bgbanner {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0; /* Send it behind everything */
+        background-size: contain; 
     }
     
+    /* FIX 3: Ensure content is visible */
+    .hero-content {
+        padding-right: 0;
+        padding-top: 50px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .hero-image-placeholder {
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        position: relative;
+        z-index: 10;
+    }
     
-}
-.logo {
+    /* ... rest of the styles inside this block, like .hero-content h1, etc. ... */
+    
+    .hero-content h1 {
+        font-size: 2.5em; /* Keep this scale */
+    }
+    
+    .nav-links {
+        display: none; /* Hide navigation links on small screens */
+    }
+    /* ... */
+}.logo {
     font-size: 1.8em;
     font-weight: 700;
     color: var(--color-primary);
