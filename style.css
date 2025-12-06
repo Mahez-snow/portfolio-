@@ -73,7 +73,6 @@ body {
     width: 45%; 
     left: 54%;
     margin-top: 1%;
-    
     /* FIX 1: Use Aspect Ratio Hack for responsive height */
     height: 0;             /* Set height to zero */
     padding-bottom: 30%;   /* This sets the height (25% of the 45% width). ADJUST THIS PERCENTAGE to change the height. */
@@ -92,7 +91,7 @@ body {
         
         /* FIX 3: Clean up height properties on mobile */
         height: 0; 
-        padding-bottom: 45%; /* INCREASE HEIGHT on mobile to prevent clipping (Adjust this value!) */
+        padding-bottom: 30%; /* INCREASE HEIGHT on mobile to prevent clipping (Adjust this value!) */
     }
     
     /* FIX 4: Ensure hero content is ALWAYS visible on top */
