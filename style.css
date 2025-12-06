@@ -94,18 +94,7 @@ body {
         padding-bottom: 30%; /* INCREASE HEIGHT on mobile to prevent clipping (Adjust this value!) */
     }
     
-    /* FIX 4: Ensure hero content is ALWAYS visible on top */
-    .hero-content {
-        position: relative; /* Must be positioned */
-        z-index: 10;        /* Bring content layer way to the front */
-    }
-
-    .hero-image-placeholder {
-        position: relative; /* Must be positioned */
-        z-index: 10;        /* Bring photo layer way to the front */
-    }
     
-    /* ... rest of the 900px media query ... */
 }
 .logo {
     font-size: 1.8em;
