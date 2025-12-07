@@ -1,7 +1,7 @@
 # Mahesh's Personal Portfolio Website
 
 ## 🌐 Live Site
-### [Your Netlify URL here, e.g., comfy-dragon-b3dacd.netlify.app]
+### [https://mahezportfolio.netlify.app/]
 
 ---
 
