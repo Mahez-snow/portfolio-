@@ -43,10 +43,3 @@ The design features a dynamic, tech-themed hero banner and is optimized for spee
 
 ---
 
----
-
-## 📬 Connect With Me
-
-* **GitHub:** [Link to Your GitHub Profile]
-* **LinkedIn:** [Link to Your LinkedIn Profile]
-* **Email:** [Your Professional Email Address]
